@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+
+    <div class="calcu-Container">
+        <div class="calcu-Wrapper">
+            <div class="output-displayer" id="output-displayer">
+                <p id="expression" ></p>
+                <p id="display" ></p>
+            </div>
+            <div class="switch">
+                <button class="on" onclick="offCalcu(true)">on</button>
+            </div>
+            <div class="calcu-buttons">
+                <div class="buttons">
+                    <button class="off" onclick="offCalcu(false)">CE</button>
+                    <button class="delete" onclick="clearDisplay()">C</button>
+                    <button class="backspace" onclick="backspace()">Del</button>
+                    <button class="plus" onclick="appendValue('+')">+</button>
+                </div>
+                <div class="buttons">
+                    <button class="nine" onclick="appendValue('9')">9</button>
+                    <button class="eight" onclick="appendValue('8')">8</button>
+                    <button class="seven" onclick="appendValue('7')">7</button>
+                    <button class="divide" onclick="appendValue('/')">÷</button>
+                </div>
+                <div class="buttons">
+                    <button class="six" onclick="appendValue('6')">6</button>
+                    <button class="five" onclick="appendValue('5')">5</button>
+                    <button class="four" onclick="appendValue('4')">4</button>
+                    <button class="multiply" onclick="appendValue('*')">×</button>
+                </div>
+                <div class="buttons">
+                    <button class="three" onclick="appendValue('3')">3</button>
+                    <button class="two" onclick="appendValue('2')">2</button>
+                    <button class="one" onclick="appendValue('1')">1</button>
+                    <button class="minus" onclick="appendValue('-')">-</button>
+                </div>
+                <div class="buttons">
+                    <button class="percent" onclick="appendValue('%')">%</button>
+                    <button class="zero" onclick="appendValue('0')">0</button>
+                    <button class="dot" onclick="appendValue('.')">.</button>
+                    <button class="equal" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="calcu.js"></script>
+</html>
