@@ -11,21 +11,21 @@
     <div class="calcu-Container">
         <div class="calcu-Wrapper">
             <div class="output-displayer" id="output-displayer">
-                <p id="expression" ></p>
-                <p id="display" ></p>
+                <p id="expression" ></p> <!--Displays expression-->
+                <p id="display" ></p> <!--Displays output-->
             </div>
             <div class="switch">
-                <button class="on" onclick="offCalcu(true)">on</button>
+                <button class="on" onclick="offCalcu(true)">on</button> <!--on button-->
             </div>
             <div class="calcu-buttons">
-                <div class="buttons">
-                    <button class="off" onclick="offCalcu(false)">CE</button>
-                    <button class="delete" onclick="clearDisplay()">C</button>
-                    <button class="backspace" onclick="backspace()">Del</button>
-                    <button class="plus" onclick="appendValue('+')">+</button>
+                <div class="buttons"> <!--other button containing operators, numbers, and other fun tion such as off, clear, and delete-->
+                    <button class="off" onclick="offCalcu(false)">CE</button> <!--off button-->
+                    <button class="delete" onclick="clearDisplay()">C</button> <!--clear button-->
+                    <button class="backspace" onclick="backspace()">Del</button> <!--delete button-->
+                    <button class="plus" onclick="appendValue('+')">+</button> <!--operator-->
                 </div>
                 <div class="buttons">
-                    <button class="nine" onclick="appendValue('9')">9</button>
+                    <button class="nine" onclick="appendValue('9')">9</button> <!--numbers-->
                     <button class="eight" onclick="appendValue('8')">8</button>
                     <button class="seven" onclick="appendValue('7')">7</button>
                     <button class="divide" onclick="appendValue('/')">÷</button>
@@ -46,11 +46,12 @@
                     <button class="percent" onclick="appendValue('%')">%</button>
                     <button class="zero" onclick="appendValue('0')">0</button>
                     <button class="dot" onclick="appendValue('.')">.</button>
-                    <button class="equal" onclick="calculate()">=</button>
+                    <button class="equal" onclick="calculate()">=</button> <!--solves expression-->
                 </div>
             </div>
         </div>
     </div>
 </body>
     <script src="calcu.js"></script>
+
 </html>
