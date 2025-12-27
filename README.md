@@ -15,8 +15,13 @@ A small browser-based calculator demo for basic arithmetic operations.
 
 ## Run
 
-1. Open `calcu.html` in your browser.
-2. Use the on-screen buttons or your keyboard to enter expressions.
+- Open `calcu.html` in your browser.
+
+## How it Works
+
+- Click the turn on button.
+- Click the number and operators to create expression.
+- Click equal button to see the answer.
 
 ## Usage examples
 
@@ -32,3 +37,4 @@ A small browser-based calculator demo for basic arithmetic operations.
 ---
 
 **Notes:** Designed for local use. No server required.
+
